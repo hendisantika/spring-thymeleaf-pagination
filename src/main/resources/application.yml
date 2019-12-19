@@ -1,9 +1,10 @@
 spring:
   thymeleaf:
     cache: false
-    content-type: text/html
-#    prefix: classpath:/templates
+    #    prefix: classpath:/templates
     prefix: file:./src/main/resources/templates/
+    servlet:
+      content-type: text/html
   jpa:
     show-sql: true
   datasource:
